@@ -2062,7 +2062,7 @@ as $$
    select m1.*
    from medicamentos as m1
    where m1.precio = (select max(m2.precio)
-					  from medicamentos as m2);
+					            from medicamentos as m2);
    $$
 language sql;
 
